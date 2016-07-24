@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>小游戏</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content ="max-age=10">
+
+<link rel="stylesheet" type="text/css" href="/css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="/css/app.min.css">
+<script type="text/javascript"src="/js/swiper.min.js"></script>
+<script type="text/javascript"src="/js/zepto.min.js"></script>
+<style>
+.ceshi{
+	background: red;
+	height: 100px;
+	width: 100px;
+}
+</style>
+
+</head>
+<body>
+	<div class="mui-inner-wrap">
+		<!-- 主页面标题 -->
+		<header class="mui-bar mui-bar-nav">
+			<div class="game-fl diy-nav-bar ">
+				<a class="diy-control-item mui-active" href="#">首页</a>
+				<a class="diy-control-item" href="#">分类</a>
+				<a class="diy-control-item" href="#">游戏DIY</a>
+				<a class="diy-control-item" href="#">我的</a>
+			</div>
+			<a href="#" title="用户中心" class="nav-user">
+			</a>
+		</header>
+<div class="mui-content">
+			<!--search form-->
+			<section class="container search diy-content-space">
+				<form action="#" class="form" method="post" data-ui="static" id="search-form">
+					<div data-role="input">
+						<input placeholder="大家都在搜：虐心游戏，你敢挑战吗？" type="text" maxlength="40" name="q" id="search" class="mui-ellipsis">
+						<i class="iconfont icon-search"></i>
+						<i class="iconfont icon-close"></i>
+					</div>
+					<button class="ui-btn" data-ui="danger small" type="button" id="search-btn">搜索</button>
+				</form>
+			</section>
+<!--slider-->
+			 <div class="swiper-container diy-content-space main-content swiper-container-horizontal" id="banner-slider">
+				<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-4480px, 0px, 0px);">
+					<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="">
+								</a>
+				     </div>
+					<div class="swiper-slide" data-swiper-slide-index="0" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="">
+								</a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="1" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="banner-slider-2">
+								</a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="2" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="banner-slider-3">
+								</a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="3" style="width: 640px;">
+								<a href="#" id="banner-slider-4">
+									<img src="/images/ban1.jpg" id="banner-slider-4">
+								</a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="4" style="width: 640px;">
+								<a href="#" id="banner-slider-5">
+									<img src="/images/ban1.jpg" id="banner-slider-5">
+								</a>
+							</div>
+							<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="5" style="width: 640px;">
+								<a href="#" id="banner-slider-6">
+									<img src="/images/ban1.jpg" id="banner-slider-6">
+								</a>
+							</div>
+							<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="6" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="banner-slider-7">
+								</a>
+							</div>
+							<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="7" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg" id="banner-slider-8">
+								</a>
+							</div><div class="swiper-slide" data-swiper-slide-index="8" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg">
+								</a>
+							</div>
+							<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 640px;">
+								<a href="#">
+									<img src="/images/ban1.jpg">
+								</a>
+							</div></div>
+				<div class="swiper-pagination swiper-pagination-clickable">
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+				</div>
+			  </div>
+			 <!-- end slider -->
+
+	<ul class="mui-table-view mui-grid-view mui-grid-9 main-content">
+				<h5 class="mui-content-padded"><span class="content-nav-tip charge-game-tip">网</span>
+					<span class="content-title">精选网游</span>
+					<a href="#" class="game-new charge-game-new"><i class="iconfont icon-shou01"></i>最新网游：无尽英雄</a>
+					<a class="diy-more" href="#"> 更多<i class="iconfont icon-right"></i></a>
+				</h5>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="h#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1455526785Y6U0y.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">全民穿越之宫</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1455526785Y6U0y.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">超级星途</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1462952120gDzhW.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">群P英雄</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1460715231zVPGU.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">疯狂打怪兽</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1460715231zVPGU.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">少女H计划2</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1459219953ZVJbG.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">大燕王妃</div>
+						</a>
+					</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+
+							<figure class="cover rcmd-cover">
+								<img src="/images/1459150684MnMVw.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">禽兽大叔</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+						<a href="#">
+							<figure class="cover rcmd-cover">
+								<img src="/images/1459304254ijfn8.jpg" class="tuijian-img">
+								<img class="game-corner" src="/images/14470349140WQFS.png" style="display: block">							</figure>
+							<div class="mui-media-body tuijian-title">美人心计2</div>
+						</a>
+					</li>			
+				</ul>
+
+
+               <ul class="mui-table-view mui-grid-view mui-grid-9 main-content diy-content-space">
+				 <h5 class="mui-content-padded"><span class="content-nav-tip tiny-game-tip">小</span>
+					 <span class="content-title">精选小游戏</span>
+					 <a href="#" class="game-new tiny-game-new"><i class="iconfont icon-shou01"></i>今日更新：全民跑跑跑</a>
+				 	 <a class="diy-more" href="#"> 更多<i class="iconfont icon-right"></i></a>
+				 </h5>
+
+					<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/1445331590VLef1.jpg" class="tuijian-img">
+									<img class="game-corner" src="/images/1447034898KsfXj.png" style="display: block">								</figure>
+							   <div class="mui-media-body tuijian-title">六角碎片</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/1457752218GVB3w.jpg" class="tuijian-img">
+																	</figure>
+							   <div class="mui-media-body tuijian-title">3D汽车</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/14459099600YsPP.jpg" class="tuijian-img">
+																	</figure>
+							   <div class="mui-media-body tuijian-title">命悬一线</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/14449038559GwUr.png" class="tuijian-img">
+																	</figure>
+							   <div class="mui-media-body tuijian-title">水下逃生</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/1442052033Qx9cF.png" class="tuijian-img">
+									<img class="game-corner" src="/images/1447034898KsfXj.png" style="display: block">								</figure>
+							   <div class="mui-media-body tuijian-title">最坑手机测试</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/1462430220dE63K.png" class="tuijian-img">
+																	</figure>
+							   <div class="mui-media-body tuijian-title">极速飞镖</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/14472919562mFBg.jpg" class="tuijian-img">
+									<img class="game-corner" src="/images/1447034898KsfXj.png" style="display: block">								</figure>
+							   <div class="mui-media-body tuijian-title">四加一</div>
+							</a>
+						</li><li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+
+								<figure class="cover rcmd-cover">
+									<img src="/images/14466259951ZNL7.jpg" class="tuijian-img">
+																	</figure>
+							   <div class="mui-media-body tuijian-title">青蛙过河</div>
+							</a>
+						</li>			
+					</ul>
+
+
+
+
+
+<!-- all list -->
+			<section id="all-game" class="main-content diy-content-space">
+				<div class="diy-tab diy-space-big">
+					<a class="diy-tab-item mui-active" url="/index.php/home/index/getpagedata/pageIndex/">全部游戏</a>
+					<a class="diy-tab-item " url="/index.php/home/index/getpagedata/charge/0/pageIndex/">小游戏</a>
+					<a class="diy-tab-item" url="/index.php/home/index/getpagedata/charge/1/pageIndex/">网游</a>
+				</div>
+				<ul class="list " id="jingp">		
+					<li class="diy-item">
+					<a href="#">
+				 		<figure class="cover">
+					 		<img class="" src="/images/1466569905KWibN.jpg">
+					 		<img class="game-corner" src="/images/14470348816dL25.png" style="display: block">
+						</figure>
+						<div class="diy-meta">
+					 	<div class="title mui-ellipsis"><span class="game-title">全民跑跑跑</span> <span class="game-tags"></span></div>
+					 	<span class="mui-icon mui-icon-star5"></span>
+					 	<span class="count">60万人在玩</span>
+					 	<div class="desc mui-ellipsis">保持活力，不要落后，勇敢向前奔跑吧！</div>
+				 		</div>
+					</a>
+					<a href="#" class="play" data-ui="danger small icon-right">
+					开始<span class="mui-icon mui-icon-arrowright"></span>
+					</a>
+				</li>
+				<li class="diy-item">
+					<a href="#">
+					<figure class="cover">
+					 <img class="" src="/images/1466678317WqkMk.jpg">
+					</figure>
+					<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">补砖块</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">326.4万人在玩</span>
+					 <div class="desc mui-ellipsis">补砖块，据说只有1%的人能玩超过200分！</div>
+				 	</div>
+					</a>
+					<a href="#" class="play" data-ui="danger small icon-right">
+					开始<span class="mui-icon mui-icon-arrowright"></span>
+					</a>
+				</li>
+			<li class="diy-item">
+			        <a href="#">
+				      <figure class="cover">
+					 <img class="" src="/images/1467441300n43i4.jpg">
+					 <img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">
+				     </figure>
+				     <div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">无尽英雄</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">24万人在玩</span>
+					 <div class="desc mui-ellipsis">首款无限题材的探险RPG游戏！</div>
+				     </div>
+			        </a>
+			        <a href=#" class="play" data-ui="danger small icon-right">
+				    开始<span class="mui-icon mui-icon-arrowright"></span>
+					</a>
+			</li>
+			<li class="diy-item">
+				<a href="#">
+						<figure class="cover">
+					 	<img class="" src="/images/1463806749MT4Dt.jpg.jpg">
+					 
+						</figure>
+					<div class="diy-meta">
+						 <div class="title mui-ellipsis"><span class="game-title">马尔代夫机票生成器</span> 
+						 	<span class="game-tags"><span>整蛊神器</span></span>
+						 </div>
+						 <span class="mui-icon mui-icon-star5"></span>
+						 <span class="count">106.2万人在玩</span>
+					 	<div class="desc mui-ellipsis">来一场说走就走的旅行！</div>
+				 	</div>
+				</a>
+				<a href="#" class="play" data-ui="danger small icon-right">
+				  	开始<span class="mui-icon mui-icon-arrowright"></span>
+				</a>
+			</li>
+			<li class="diy-item">
+				<a href="#">
+				<figure class="cover">
+					<img class="" src="/images/1466566193ZHi8V.jpg">	 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">猫咪跳灯</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">761.7万人在玩</span>
+					 <div class="desc mui-ellipsis">好奇心虐死猫，你的猫能活多久？</div>
+				 </div>
+				</a>
+				<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+				</a>
+			</li>
+			<li class="diy-item">
+				<a href="#">
+					<figure class="cover">
+					 <img class="" src="/images/1466648720HRTRC.jpg">
+					</figure>
+					<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">虐心跨栏</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">525.3万人在玩</span>
+					 <div class="desc mui-ellipsis">花式虐心，听说只有4%的人可以跳到100分，你敢挑战吗？</div>
+				 	</div>
+				</a>
+				<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+				</a>
+		 	</li>
+			<li class="diy-item">
+				<a href="#">
+					<figure class="cover">
+						 <img class="" src="/images/1467426249V3UJ5.jpg">
+						 <img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">
+					</figure>
+					<div class="diy-meta">
+						 <div class="title mui-ellipsis"><span class="game-title">武神空间</span> <span class="game-tags"></span></div>
+						 <span class="mui-icon mui-icon-star5"></span>
+						 <span class="count">29.7万人在玩</span>
+						 <div class="desc mui-ellipsis">官方正版全民修真游戏！</div>
+				 	</div>
+				</a>
+				<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+				</a>
+			</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="/images/1464340185KCsxB.jpg.jpg">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">海天盛筵邀请函</span> <span class="game-tags"><span>整蛊神器</span></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">68.7万人在玩</span>
+					 <div class="desc mui-ellipsis">一大波美女正在靠近...</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="/images/1465265889OVXYD.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">萝卜圈</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">1244.4万人在玩</span>
+					 <div class="desc mui-ellipsis">可爱的萝卜圈，一跳一跳的，感觉棒极了！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/325">
+				<figure class="cover">
+					 <img class="" src="/images/1465266892Ot5ly.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">看你能飞多高</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">583.5万人在玩</span>
+					 <div class="desc mui-ellipsis">当很多人关心你飞得高不高时，只有很少人关心你飞得累不累！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>		<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1466750415k9pZX.jpg">
+					 <img class="game-corner" src="/images/1447034855IbTW2.png" style="display: block">
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">战歌</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">132.9万人在玩</span>
+					 <div class="desc mui-ellipsis">《魔兽》来袭，快来领取你的坐骑、战宠！为荣誉而战！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1463815433pxiwO.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">火柴运算</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">534.9万人在玩</span>
+					 <div class="desc mui-ellipsis">小小的火柴棒，开启奇妙的数学运算！</div>
+				 </div>
+			</a>
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/314" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/341">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/funny/1466650116fbTkq.jpg.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">高考成绩单生成器</span> <span class="game-tags"><span>装X神器</span></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">203.1万人在玩</span>
+					 <div class="desc mui-ellipsis">高考成绩晒出来，清华北大任我挑！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1465266696iAcam.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">强迫症矫正棍</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">1132.8万人在玩</span>
+					 <div class="desc mui-ellipsis">强迫症矫正棍，你以为能调平？那只是错觉......</div>
+				 </div>
+			</a>
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/324" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1465266519cLefL.jpg">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">切菜大师</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">482.7万人在玩</span>
+					 <div class="desc mui-ellipsis">来玩玩切菜大师，让你练得一手好刀功！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1465264750RikQg.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">僵尸大战植物</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">272.4万人在玩</span>
+					 <div class="desc mui-ellipsis">植物们小心了，僵尸也不是好惹的！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/320">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1464658056ko6th.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">叠了个塔</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">666.6万人在玩</span>
+					 <div class="desc mui-ellipsis">心有多高，塔就有多高！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="#">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1465784003ymZPP.jpg">
+					 <img class="game-corner" src="images/1447034855IbTW2.png" style="display: block">
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">大侠归来</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">54万人在玩</span>
+					 <div class="desc mui-ellipsis">国民武侠，开启暴爽新篇章！诸多奇遇伴你决战华山之巅，华丽又刺激，这个江湖值得一战！</div>
+				 </div>
+			</a>
+			<a href="#" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/315">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/1463966393F9SzO.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">戳爆他们</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">255.32万人在玩</span>
+					 <div class="desc mui-ellipsis">可恶的小怪兽占据了屏幕，赶紧来戳爆他们吧！</div>
+				 </div>
+			</a>
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/315" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+			<li class="diy-item">
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/312">
+				<figure class="cover">
+					 <img class="" src="http://uploads-admin.cdn.itwlw.com/game248/146353779514miZ.png">
+					 
+				</figure>
+				<div class="diy-meta">
+					 <div class="title mui-ellipsis"><span class="game-title">迷彩方块</span> <span class="game-tags"></span></div>
+					 <span class="mui-icon mui-icon-star5"></span>
+					 <span class="count">186万人在玩</span>
+					 <div class="desc mui-ellipsis">像玩《2048》一样来消除方块吧，真的好神奇！</div>
+				 </div>
+			</a>
+			<a href="http://www.248xyx.com/index.php/home/tiny_game/brief/id/312" class="play" data-ui="danger small icon-right">
+				开始<span class="mui-icon mui-icon-arrowright"></span>
+			</a>
+		</li>
+	
+	</ul>
+			</section>
+<!--end media list-->
+			<section class="search-rcmd diy-content-space">
+				<h5 class="diy-content-padded">热搜榜</h5>
+				<div class="keywords-wrap">
+					<a href="http://www.248xyx.com/index.php/home/TinyGame/brief/id/343" class="search-label mui-ellipsis">为了部落！为了联盟！</a>
+				</div>
+				<div class="keywords-wrap">
+					<a href="http://www.248xyx.com/index.php/home/TinyGame/brief/id/330" class="search-label mui-ellipsis">一心三用，你能坚持多久？</a>
+				</div>
+				<div class="keywords-wrap">
+					<a href="http://www.248xyx.com/index.php/home/TinyGame/brief/id/354" class="search-label mui-ellipsis">收集神器，战术抗敌！</a>
+				</div>
+				<div class="keywords-wrap">
+					<a href="http://www.248xyx.com/index.php/home/TinyGame/brief/id/339" class="search-label mui-ellipsis">你的反应有多快？</a>
+				</div>				
+				<div style="clear: both"></div>
+				<span class="search-rcmd-close">
+					<i class="iconfont icon-close"></i>&nbsp;关闭</span>
+			</section>
+		</div>
+		 <div class="refresh-tip" style="display: block;"> <img id="loading" src="/images/myloading.png"><span>正在加载</span></div>
+		
+	</div>
+
+
+
+<textarea id="game-item" style="display:none;">		
+	&lt;li class="diy-item"&gt;
+			&lt;a href="/index.php/home/tiny_game/brief/id/##id##"&gt;
+				&lt;figure class="cover"&gt;
+					 &lt;img class="" src="http://uploads-admin.cdn.itwlw.com/##img##"&gt;
+					 &lt;img class="game-corner" src="http://uploads-admin.cdn.itwlw.com/##label##" style="display: block"&gt;
+				&lt;/figure&gt;
+				&lt;div class="diy-meta"&gt;
+					 &lt;div class="title mui-ellipsis"&gt;&lt;span class="game-title"&gt;##title##&lt;/span&gt; &lt;span class="game-tags"&gt;##tags##&lt;/span&gt;&lt;/div&gt;
+					 &lt;span class="mui-icon mui-icon-star5"&gt;&lt;/span&gt;
+					 &lt;span class="count"&gt;##view##万人在玩&lt;/span&gt;
+					 &lt;div class="desc mui-ellipsis"&gt;##desc##&lt;/div&gt;
+				 &lt;/div&gt;
+			&lt;/a&gt;
+			&lt;a href="/index.php/home/tiny_game/brief/id/##id##" class="play" data-ui="danger small icon-right"&gt;
+				开始&lt;span class="mui-icon mui-icon-arrowright"&gt;&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	</textarea>
+
+<script>
+		 var pageIndex = 1;
+		 var serverUrl = "/js/1.txt";
+		 window.onload = function () {
+			 var imgID = [];
+			 $('#banner-slider img').each(function (index) {
+				 var idTemp = $(this).attr('id');
+				 var arrIndex = $.inArray(idTemp, imgID);
+				 if(arrIndex == -1 ){
+					 imgID.push(idTemp);
+				 }else{
+					 $('#banner-slider img').eq(arrIndex).attr('id','');
+				 }
+			 })
+		 }
+	</script>
+
+
+
+
+
+    <!--sweiper轮播代码-->
+<script type="text/javascript">
+	var rcmdClose = document.querySelectorAll('.search-rcmd-close')[0];
+var searchPanel = document.querySelectorAll('.search-rcmd')[0];
+var swiper = new Swiper('#banner-slider', {
+	pagination: '.swiper-pagination',
+	paginationClickable: true,
+	autoplay:'2000',
+	loop: true
+});
+</script>
+
+
+
+
+
+
+
+<script src="/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

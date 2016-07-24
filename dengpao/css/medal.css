@@ -1,0 +1,242 @@
+/*medal-panel style*/
+.medal-panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 10000;
+    background: #000;
+    display:none;
+}
+
+.medal-panel .panel {
+    background-image: url(../medal/bg.png?v=1.01);
+}
+
+.medal-panel-light {
+    width: 100%;
+    -webkit-animation: roting 10s linear infinite
+}
+
+.medal-panel .bg {
+    height: 100%;
+    background: #000
+}
+
+.medal-panel .panel {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center
+}
+
+.medal-panel .medal-close {
+    width: 10%;
+    top: 6%;
+    position: absolute;
+    right: 10%
+}
+
+.medal-top .medal-bg {
+    width: 100%;
+    margin-top: 3.5em
+}
+
+.medal-top .medal {
+    margin: 0 auto;
+    padding-top: 2.1em;
+    padding-left: 1.5%;
+    width: 24%;
+    display:block;
+}
+
+.medal-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 4.5em;
+    padding-left: 1%
+}
+
+.panel .all-medal-tip {
+    margin-top: -1.7em;
+    width: 100%
+}
+
+.panel .medal-tip {
+    width: 35%
+}
+
+.medal-data {
+    text-align: center;
+    font-family: MicroSoft YaHei;
+    font-size: 0.5em;
+    color: #b46e01;
+    margin-left: -2%;
+}
+
+.medal-data .medal-data-item {
+    background-image: url(../medal/data_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.8em;
+    color: #fff;
+    line-height: 1.8em;
+    width: 11.5em;
+    margin: 0 auto
+}
+
+.medal-panel .medal-top {
+    margin-top: -4em;
+    width: 100%;
+    height: 7em;
+    background-image: url(../medal/medal_bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.panel .medal-button {
+    width: 30%;
+    display: inline-block
+}
+
+.panel .medal-btns {
+    margin-top: 1.2em;
+    width: 97.5%
+}
+
+.medal-data .medal-data-appel,.medal-result,.medal-retry,.medal-bg-fail,.medal-hide,.medal-panel-bg,.medal-data-bg,.medal,.medal-preload {
+    display: none
+}
+
+.medal-panel .medal-loading-wrapper {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display:block
+}
+
+.medal-panel .medal-loading-image {
+    -webkit-animation: reverseRotataZ 1s linear infinite;
+    vertical-align: middle;
+    width: 19%
+}
+
+@-webkit-keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+
+    to {
+        -webkit-transform: rotateZ(360deg)
+    }
+}
+
+.medal-panel .medal-loading-text {
+    position: relative;
+    text-align: center;
+    color: #ff4303;
+    margin: 15px auto;
+    font-family: "微软雅黑";
+    letter-spacing: 1px;
+    font-size: 1pc
+}
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+    .panel .medal-tip {
+        top: 39%
+    }
+
+    .medal-center {
+        top: 17%
+    }
+
+    .panel .medal-btns {
+        margin-top: 7%
+    }
+}
+
+.all-medal-tip .medal-result {
+    display: none;
+    margin: 0.2em auto;
+    width: 22%;
+}
+
+.medal-data .score {
+    margin-top: 0.7em
+}
+
+.medal-retry,.medal-again {
+    width: 30%
+}
+
+.medal-data .medal-data-text {
+    height: 1.4em;
+    margin-top: 0.3em;
+    line-height: 1.4em
+}
+
+/* add by delan*/
+ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.medal-panel{
+    display:none;
+    vertical-align: middle;
+
+}
+.medal-data{
+    margin-left: 0;
+}
+.medal-data li{
+    text-align: center;
+}
+.medal-panel .panel{
+    background-size:100% ;
+    height:14.2em;
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(../medal/bg.png?v=1.01);
+    position: relative;
+}
+@-webkit-keyframes roting {
+    0% {-webkit-transform: rotateZ(0);}
+    100% {-webkit-transform: rotateZ(360deg);}
+}
+.medal-panel-light{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -1em;
+}
+.medal-panel .medal-top{
+    height:4.4em;
+    padding-bottom: 3em;
+}
+.medal-top .medal{
+    padding-top: 2.3em
+}
+.medal-data .medal-data-item{
+    background-size:100% 100%;
+    width:11em;
+}
+.panel .medal-btns{
+    width:71%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel .medal-button{
+    width:3em;
+}
+.medal-panel *{
+    box-sizing: content-box;
+}
